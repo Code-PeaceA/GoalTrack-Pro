@@ -1,0 +1,58 @@
+/* Reset or Normalize CSS */
+@import url(reset.css); /* Or include the contents directly */
+
+/* General Styles */
+/* Your global styles here */
+
+/* Component-specific Styles */
+@import url(components/header.css);
+@import url(components/footer.css);
+/* Other component stylesheets */
+
+/* Section-specific Styles */
+/* Styles for different sections/pages */
+@import url(home.css);
+@import url(leagues.css);
+@import url(teams.css);
+@import url(matches.css);
+@import url(media.css);
+@import url(community.css);
+
+/* Responsive Styles */
+@import url(responsive/mobile.css);
+@import url(responsive/tablet.css);
+/* Other responsive stylesheets */
+
+/* Variables */
+body {
+    /* Colors */
+    --primaryColor: #1D3557;
+    --secondaryColor: #FF6B6B;
+    --accentColor: #F4A261;
+    --neutralColor: #FFFFFF;
+    --darkShade: #0D1B2A;
+
+    /* Fonts */
+    --headerFont: 'Montserrat', sans-serif;
+    --bodyFont: 'Lato', sans-serif;
+}
+
+/* Font Styles */
+body {
+    font-family: var(--bodyFont); /* Default font */
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--headerFont); /* Heading fonts */
+}
+
+/* Body */
+body {
+    background-color: var(--primaryColor);
+
+}
+
+header {
+    padding: 0 50px;
+}
