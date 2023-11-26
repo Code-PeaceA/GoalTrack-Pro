@@ -57,7 +57,6 @@ const newsURL = 'https://newsapi.org/v2/top-headlines?apiKey=aad5a966ca7c49d9b50
 fetch(newsURL)
     .then(res => res.json()) // parse response as JSON
     .then(data => {
-        console.log(data.articles.slice(0, 10))
         const top10Articles = data.articles.slice(0, 10);
         top10Articles.forEach(article => {
             // create article section
