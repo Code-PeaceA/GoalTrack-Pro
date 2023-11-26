@@ -14,10 +14,30 @@ main .highlightsSection {
     margin-bottom: 1em;
 }
 
+.highlightsSection .highlightVideoDate {
+    font-size: 0.8em;
+}
+
+.highlightsSection .videoCarouselContainer {
+    display: flex;
+    gap: 0.4em;
+    overflow-x: auto; /* Use "auto" to show scrollbars only when needed */
+    scroll-snap-type: x mandatory; /* Enable scroll snapping */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling for iOS */
+    white-space: nowrap; /* Prevent items from wrapping to new lines */
+}
+
+.videoContainer {
+    width: 30%; /* Adjust the width as needed */
+    flex: 0 0 auto; /* Ensure fixed width and do not grow/shrink */
+    scroll-snap-align: start; /* Align elements during scroll */
+}
+
+
 main .newsSection {
     width: 30%;
     max-width: 300px;
-    margin-top: 2.2%;
+    margin-top: 1.6%;
 }
 
 .newsSection h3 {
@@ -28,11 +48,11 @@ main .newsSection {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    height: 600px;
+    height: 750px;
     overflow-y: scroll;
 }
 
-.newsSection .newsContainer::-webkit-scrollbar {
+.newsSection .newsContainer::-webkit-scrollbar, .highlightsSection .videoCarouselContainer::-webkit-scrollbar {
     width: 0;
     height: 0;
     display: none;

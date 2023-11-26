@@ -11,8 +11,10 @@
 
 .card {
     border-radius: 16px;
-    box-shadow: 0 30px 30px -25px rgba(var(--darkShade), .25);
+    box-shadow: rgba(13, 28, 43, 0.2) 0px 8px 24px;
     padding: 2rem;
     background-color: var(--neutralColor);
     color: var(--darkShade);
+    margin-top: 1em;
 }
+
