@@ -65,7 +65,7 @@ fetch(newsURL)
             newsContainer.appendChild(articleContainer);
 
             // create news header element that links to full article site
-            const articleHeader = document.createElement('h3');
+            const articleHeader = document.createElement('h5');
             const articleHeaderLink = document.createElement('a');
             articleHeaderLink.href = article.url;
             articleHeaderLink.innerText = article.title;
@@ -82,15 +82,19 @@ fetch(newsURL)
             articleHeaderSpan.innerText = `Source: ${articleSource} - ${articlePublishedDateTime}`;
 
             // create description element
-
             const articleDescription = document.createElement('p');
             if (article.description) {
                 articleDescription.innerText = article.description;
             }
+
+            // create divider element
+            const articleDivider = document.createElement('hr');
+            articleDivider.classList.add('articleDivider')
+
             
             // append article elements into article container
-            const articleArray = [articleHeader, articleHeaderSpan, articleDescription]
-            articleArray.forEach(article => articleContainer.appendChild(article));
+            const articleArray = [articleHeader, articleHeaderSpan, articleDescription, articleDivider]
+            articleArray.forEach(article => articleContainer.append(article));
         })
     })
     .catch(err => {

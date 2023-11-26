@@ -7,6 +7,7 @@
 /* Component-specific Styles */
 @import url(components/header.css);
 @import url(components/footer.css);
+@import url(components/cards.css);
 /* Other component stylesheets */
 
 /* Section-specific Styles */
@@ -22,6 +23,11 @@
 @import url(responsive/mobile.css);
 @import url(responsive/tablet.css);
 /* Other responsive stylesheets */
+
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
 
 /* Variables */
 body {
@@ -48,34 +54,46 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 2.5em;
+    margin-bottom: 2em;
 }
 
 h2 {
     font-size: 1.8em;
+    margin-bottom: 1.5em;
 }
 
 h3 {
     font-size: 1.4em;
+    margin-bottom: 1em;
 }
 
 h4 {
     font-size: 1.2em;
+    margin-bottom: 1em;
 }
 
 h5 {
     font-size: 1.1em;
+    margin-bottom: 1em;
 }
 
 h6 {
     font-size: 1em;
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 1.5em;
 }
 
 /* Body */
 body {
     background-color: var(--primaryColor);
+    color: var(--neutralColor);
 
 }
 
-header {
+header, main {
     padding: 0 50px;
 }

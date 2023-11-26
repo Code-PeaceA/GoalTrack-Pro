@@ -1,0 +1,18 @@
+
+.cards {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    border-radius: 16px;
+    box-shadow: 0 30px 30px -25px rgba(var(--darkShade), .25);
+    padding: 2rem;
+    background-color: var(--neutralColor);
+    color: var(--darkShade);
+}
