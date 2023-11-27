@@ -8,6 +8,7 @@ header {
 nav {
     height: 50px;
     width: 100vw;
+    min-width: 780px;
     background-color: var(--primaryColor);
     transition: 0.2s;
     display: flex;
@@ -28,25 +29,32 @@ nav {
 
 .logo {
     font-family: var(--headerFont);
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: var(--neutralColor);
+    width: 30%;
+    min-width: 180px;
 }
 
 .logo span {
     color: var(--accentColor);
+    font-size: 1.5rem;
 }
 
 nav .navLinks {
     display: flex;
-    justify-content: space-between;
+    gap: 10%;
+    justify-content: flex-end;
     align-items: center;
-    width: 45%;
+    width: 70%;
+}
+
+nav .navLinks li {
 }
 
 nav .navLink {
     color: var(--accentColor);
     font-family: var(--bodyFont);
-    font-size: 0.8em;
+    font-size: 0.8rem;
     transition: color 0.3s ease-in-out; /* Transition for font color change */
     position: relative;
 }
@@ -55,8 +63,8 @@ nav .navLink::before {
     content: '';
     position: absolute;
     width: 0;
-    height: 2em;
-    bottom: -0.4em;
+    height: 2rem;
+    bottom: -0.4rem;
     left: -10%;
     background-color: var(--accentColor);
     transition: width 0.3s ease-in-out; /* Transition for highlight motion */
@@ -68,7 +76,7 @@ nav .navLink:hover::before {
 }
 
 .navLink:hover {
-    font-size: 1em;
+    font-size: 1rem;
     text-transform: uppercase;
     font-family: var(--headerFont);
 }
