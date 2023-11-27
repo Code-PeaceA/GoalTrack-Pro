@@ -132,25 +132,45 @@ fetch(newsURL)
     });
 
 
+// API fetch for Fixtures Banner
 
-
-const fixturesurl = 'https://football98.p.rapidapi.com/premierleague/fixtures';
+const fixturesURL = 'https://api.football-data.org/v4/matches/';
 const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '3fd9b7f2c5msh54e654c2fb9f2b7p11e360jsn06884891fa6f',
-		'X-RapidAPI-Host': 'football98.p.rapidapi.com'
-	}
+    method: 'GET',
+    headers: {
+        'X-Auth-Token': '25782a2f939b4582bf23c94b293b8317',
+        // 'Access-Control-Allow-Origin': 'http://localhost',
+    }
 };
 
-try {
-	const response = await fetch(url, options);
-	const result = await response.text();
-	console.log(result);
-} catch (error) {
-	console.error(error);
-}
+fetch(fixturesURL, options)
+    .then(res => res.json()) //parse response as JSON
+    .then(data => {
+        console.log(data)
+    })
+    .catch(err => {
+        console.log(`error ${err}`)
+    });
 
+
+
+// const fixturesURL = 'https://football98.p.rapidapi.com/premierleague/fixtures';
+// const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Key': '3fd9b7f2c5msh54e654c2fb9f2b7p11e360jsn06884891fa6f',
+// 		'X-RapidAPI-Host': 'football98.p.rapidapi.com'
+// 	}
+// };
+
+// fetch(fixturesURL, options)
+//     .then(res => res.json()) //parse response as JSON
+//     .then(data => {
+//         console.log(data)
+//     })
+//     .catch(err => {
+//         console.log(`error ${err}`)
+//     });
 
 
 

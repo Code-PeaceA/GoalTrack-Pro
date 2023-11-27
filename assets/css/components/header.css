@@ -45,7 +45,6 @@ nav .navLinks {
 
 nav .navLink {
     color: var(--accentColor);
-    text-decoration: none;
     font-family: var(--bodyFont);
     font-size: 0.8em;
     transition: color 0.3s ease-in-out; /* Transition for font color change */

@@ -3,10 +3,18 @@ main {
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 main .highlightsSection {
     width: 70%;
+}
+
+.highlightsSection .highlightSectionCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 750px;
 }
 
 .highlightsSection .highlightVideoContainer {
