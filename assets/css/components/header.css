@@ -1,21 +1,17 @@
 
 header {
-    margin-bottom: 50px;
     display: flex;
     justify-content: center;
 }
 
-nav {
+#headerNav {
+    background-color: var(--primaryColor);
+    padding: 0 2rem;
+    margin-top: 2rem;
     height: 50px;
     width: 100vw;
     min-width: 780px;
-    background-color: var(--primaryColor);
     transition: 0.2s;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
-    margin-top: 20px;
 }
 
 .floatingNav {
@@ -25,6 +21,13 @@ nav {
     border-radius: 50px;
     box-shadow: 0px 1px 10px var(--darkShade);
     z-index: 1000;
+}
+
+.menuContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
 
 .logo {
@@ -40,18 +43,27 @@ nav {
     font-size: 1.5rem;
 }
 
-nav .navLinks {
+.mobileNavMenu {
+    display: none;
+}
+
+.mobileNavMenu svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.navLinksContainer {
+    width: 70%;
+}
+
+.navLinks {
     display: flex;
     gap: 10%;
     justify-content: flex-end;
     align-items: center;
-    width: 70%;
 }
 
-nav .navLinks li {
-}
-
-nav .navLink {
+.navLink {
     color: var(--accentColor);
     font-family: var(--bodyFont);
     font-size: 0.8rem;
@@ -59,7 +71,7 @@ nav .navLink {
     position: relative;
 }
 
-nav .navLink::before {
+.navLink::before {
     content: '';
     position: absolute;
     width: 0;
@@ -70,13 +82,13 @@ nav .navLink::before {
     transition: width 0.3s ease-in-out; /* Transition for highlight motion */
 }
 
-nav .navLink:hover::before {
+.navLink:hover::before {
     width: 120%;
     opacity: 0.3;
 }
 
 .navLink:hover {
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     font-family: var(--headerFont);
 }

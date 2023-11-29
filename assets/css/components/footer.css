@@ -17,14 +17,12 @@ footer {
 
 .footerLinkHeader {
     font-family: var(--headerFont);
-    /* font-size: 1.2rem; */
     border-bottom: 2px solid var(--darkShade);
-    /* color: var(--accentColor); */
     margin-bottom: 1rem;
 }
 
 .footerLinks li {
-    padding: 0.5rem 0;
+    padding: 0.3rem 0;
 }
 
 .footerLink {
@@ -69,36 +67,4 @@ footer {
 .footerLogo span {
     color: var(--accentColor);
     font-size: 2rem;
-}
-
-
-nav .navLink {
-    color: var(--accentColor);
-    text-decoration: none;
-    font-family: var(--bodyFont);
-    font-size: 0.8rem;
-    transition: color 0.3s ease-in-out; /* Transition for font color change */
-    position: relative;
-}
-
-nav .navLink::before {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2rem;
-    bottom: -0.4rem;
-    left: -10%;
-    background-color: var(--accentColor);
-    transition: width 0.3s ease-in-out; /* Transition for highlight motion */
-}
-
-nav .navLink:hover::before {
-    width: 120%;
-    opacity: 0.3;
-}
-
-.navLink:hover {
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-family: var(--headerFont);
 }

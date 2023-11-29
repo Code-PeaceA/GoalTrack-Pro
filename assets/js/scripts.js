@@ -1,13 +1,14 @@
 
+
 // Nav - bottom shadow when scrolling
-const nav = document.querySelector('#nav');
+const headerNav = document.querySelector('#headerNav');
 
 // Function to handle scroll event
 function handleScroll() {
     if (window.scrollY > 10) {
-        nav.classList.add('floatingNav');
+        headerNav.classList.add('floatingNav');
     } else {
-        nav.classList.remove('floatingNav');
+        headerNav.classList.remove('floatingNav');
     }
 }
 
@@ -192,3 +193,37 @@ function getFetch(){
       });
 }
 */
+
+
+
+// Mobile Menu
+
+const mobileNavMenu = document.querySelector('.mobileNavMenu');
+const menuContainer = document.querySelector('.menuContainer');
+
+let openMenu = false;
+
+mobileNavMenu.addEventListener('click', () => {
+    if (openMenu == false) {
+        menuContainer.style.display = 'flex';
+        headerNav.style['background-color'] = 'var(--neutralColor)';
+        headerNav.style['border-radius'] = '50px';
+        headerNav.style['flex-direction'] = 'column';
+        headerNav.style['align-items'] = 'flex-end';
+        headerNav.style['padding'] = '3rem 2rem';
+        headerNav.style['gap'] = '1rem';
+        headerNav.style['min-width'] = 'calc(180px + 4rem)';
+        headerNav.style['width'] = '35%';
+        openMenu = true;
+    } else {
+        menuContainer.style.display = 'none';
+        headerNav.style['background-color'] = 'var(--primaryColor)';
+        headerNav.style['flex-direction'] = 'row';
+        headerNav.style['justify-content'] = 'flex-end';
+        headerNav.style['padding'] = '0 2rem';
+        headerNav.style['min-width'] = null;
+        headerNav.style['width'] = '6rem';
+
+        openMenu = false;
+    }
+});

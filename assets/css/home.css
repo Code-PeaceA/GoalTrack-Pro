@@ -1,18 +1,20 @@
 
 main {
-    margin-top: 6rem;
+    margin-top: 4rem;
     margin-bottom: 3rem;
     gap: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 
-main .highlightsSection {
+.highlightsSection {
+    flex-basis: 70%;
 }
 
 .highlightsSection .highlightSectionCard {
     display: flex;
     flex-direction: column;
     height: calc(100% - 2.8rem);
-    /* height: 47rem; */
 }
 
 .highlightsSection .highlightVideoContainer {
@@ -34,19 +36,26 @@ main .highlightsSection {
 }
 
 .videoContainer {
-    width: 30%; /* Adjust the width as needed */
+    width: 30%;
     flex: 0 0 auto; /* Ensure fixed width and do not grow/shrink */
     scroll-snap-align: start; /* Align elements during scroll */
 }
 
 
-main .newsSection {
+.newsSection {
     max-width: 20rem;
     margin-top: 0.35rem;
+    flex-basis: 30%;
 }
 
 .newsSection h3 {
     text-align: center;
+}
+
+.newsSection hr {
+    background-color: var(--accentColor);
+    height: 1px;
+    border: none;
 }
 
 .newsSection .newsContainer {
@@ -71,19 +80,3 @@ main .newsSection {
 
 }
 
-.row {
-    display: flex;
-    justify-content: space-between;
-}
-
-.col {
-    box-sizing: border-box;
-}
-
-.col-70 {
-    flex-basis: 70%;
-}
-
-.col-30 {
-    flex-basis: 30%;
-}
