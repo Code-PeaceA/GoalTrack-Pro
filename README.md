@@ -3,7 +3,7 @@
 To Do
 
 1. create footer - done
-2. make home page responsive
+2. make home page responsive - done
 3. set up the rest of the pages with header and footer
 4. get design for each page
    1. League page

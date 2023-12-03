@@ -154,45 +154,7 @@ fetch(fixturesURL, options)
     });
 
 
-
-// const fixturesURL = 'https://football98.p.rapidapi.com/premierleague/fixtures';
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Key': '3fd9b7f2c5msh54e654c2fb9f2b7p11e360jsn06884891fa6f',
-// 		'X-RapidAPI-Host': 'football98.p.rapidapi.com'
-// 	}
-// };
-
-// fetch(fixturesURL, options)
-//     .then(res => res.json()) //parse response as JSON
-//     .then(data => {
-//         console.log(data)
-//     })
-//     .catch(err => {
-//         console.log(`error ${err}`)
-//     });
-
-
-
-
-/*
-document.querySelector('button').addEventListener('click', getFetch)
-
-function getFetch(){
-  const choice = document.querySelector('input').value
-  const url = 'https://pokeapi.co/api/v2/pokemon/'+choice
-
-  fetch(url)
-      .then(res => res.json()) // parse response as JSON
-      .then(data => {
-        console.log(data)
-      })
-      .catch(err => {
-          console.log(`error ${err}`)
-      });
-}
-*/
+// Async await - research later
 
 
 
@@ -227,3 +189,7 @@ mobileNavMenu.addEventListener('click', () => {
         openMenu = false;
     }
 });
+
+
+
+

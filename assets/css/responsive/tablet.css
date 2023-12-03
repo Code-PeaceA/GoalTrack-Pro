@@ -1,11 +1,6 @@
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 @media (min-width: 577px) and (max-width: 768px) {
-    
-    /* Root Font */
-    html {
-        font-size: 16px !important;
-    }
 
     /* Header */
     header {
@@ -85,11 +80,6 @@
   
   /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 769px) and (max-width: 992px) {
-    
-    /* Root Font */
-    html {
-        font-size: 16px !important;
-    }
 
     /* Header */
     nav {
