@@ -3,6 +3,7 @@
 // Nav - bottom shadow when scrolling
 const headerNav = document.querySelector('#headerNav');
 
+
 // Function to handle scroll event
 function handleScroll() {
     if (window.scrollY > 10) {
