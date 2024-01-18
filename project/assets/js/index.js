@@ -79,7 +79,6 @@ fetch(highlightVideoURL)
         console.log(`error ${err}`)
     });
 
-
 // API Fetch for news
 const newsContainer = document.querySelector('#newsContainer');
 
