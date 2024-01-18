@@ -1,0 +1,20 @@
+
+.cards {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    border-radius: 16px;
+    box-shadow: rgba(13, 28, 43, 0.2) 0px 8px 24px;
+    padding: 2rem;
+    background-color: var(--neutralColor);
+    color: var(--darkShade);
+    margin-top: 1em;
+}
+

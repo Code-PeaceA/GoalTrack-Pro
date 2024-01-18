@@ -1,0 +1,119 @@
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media (min-width: 577px) and (max-width: 768px) {
+
+    /* Header */
+    header {
+        justify-content: flex-end;
+    }
+
+    #headerNav {
+        /* width: inherit; */
+        min-width: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: inherit;
+        width: 6rem;
+    }
+
+    .mobileNavMenu {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menuContainer {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .logo {
+        color: var(--primaryColor);
+        padding-top: 1.5rem;
+        border-top: 2px solid var(--secondaryColor);
+        text-align: center;
+    }
+
+    .navLinksContainer {
+        order: -1;
+        align-self: flex-end;
+        padding: 2.5rem 0;
+    }
+
+    .navLinks {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1.5rem;
+    }
+
+    .navLink {
+        font-size: 1rem;
+    }
+
+    .navLink:hover {
+        font-size: 1.2rem;
+    }
+
+
+    /* Main */
+    main {
+        flex-wrap: wrap;
+    }
+
+    .highlightsSection {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .videoContainer {
+        width: 50%;
+    }
+
+    .newsSection {
+        flex-basis: 100%;
+        max-width: none;
+    }
+
+}
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 769px) and (max-width: 992px) {
+
+    /* Header */
+    nav {
+        min-width: 700px;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+    
+    .logo span {
+        font-size: 1.3rem;
+    }
+
+    /* Cards */
+    .card {
+        padding: 1.3rem;
+    }
+
+    /* Home - Main */
+    .newsSection .newsContainer {
+        height: 67vw;
+        gap: 0;
+    }
+
+    .newsContainer h5 {
+        font-size: 0.9rem;
+    }
+
+    .newsContainer .headerSpan {
+        font-size: 0.8rem;
+    }
+
+    /* Footer */
+
+
+}
